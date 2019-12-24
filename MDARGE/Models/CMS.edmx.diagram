@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d44f702d450a419087eb4c692cc25166" Name="Diagram1">
+        <EntityTypeShape EntityType="CMSModel.CityName" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CMSModel.FaqQuestions" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="CMSModel.FreeTrial" Width="1.5" PointX="3.5" PointY="3.25" />
+        <EntityTypeShape EntityType="CMSModel.Register" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,175 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/template.css" rel="stylesheet" />
+<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/bootstrap.minn.css" rel="stylesheet" />
+<div class="inner-banner text-center">
+    <div class="container">
+        <div class="box">
+            <h3>Contact</h3>
+        </div><!-- /.box -->
+        <div class="breadcumb-wrapper">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <ul class="list-inline link-list">
+                        <li><a href="/Home/index">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <a href="#" class="get-qoute"><i class="fa fa-share-alt"></i>share</a>
+                </div><!-- /.pull-right -->
+            </div><!-- /.container -->
+        </div>
+    </div><!-- /.container -->
+</div>
+
+
+<section class="contact_details sec-padd2">
+    <div class="container">
+        @*<div class="tabs-outer">
+            <!--Tabs Box-->
+            <div class="tabs-box tabs-style-one">
+                <!--Tab Buttons-->
+                <ul class="tab-buttons clearfix">
+                    <li data-tab="#tab-one" class="tab-btn">ISTANBUL</li>
+                </ul>
+
+                <!--Tabs Content-->
+                <div class="tabs-content">
+                    <!--Tab / Active Tab-->
+                    <div class="tab" id="tab-one" style="display: block;">
+                        <div class="text-content">
+                            <div class="text">
+                                <p>
+                                    HEAD OFFICE<br>
+                                    ITU ARI 2 TEKNOKENT BINASI<br> RESITPASA MAHALLESI KATAR CADDESI <br>NO: 4 / 1 / 102 <br>34457 SARIYER / İSTANBUL / TURKEY
+                                    <br>
+                                    TR +90 212 276 63 73<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>*@
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item center">
+                    <div class="icon_box">
+                        <span class="icon-magnifying-glass"></span>
+                    </div>
+                    <h4>Visit Our Place</h4>
+                    <div class="text">
+                        <p>
+                            ITU ARI 2 TEKNOKENT BINASI <br> RESITPASA MAHALLESI KATAR CADDESI <br>NO: 4 / 1 / 102
+                            <br>SARIYER / İSTANBUL / TURKEY
+                        </p>
+                    </div>
+                </div>
+            </div>
+            @*<div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item center">
+                    <div class="icon_box">
+                        <span class="icon-clock"></span>
+                    </div>
+                    <h4>Office Schedule</h4>
+                    <div class="text">
+                        <p>Monday to Friday: 09.00am to 18.00pm <br>Saturday&Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>*@
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item center">
+                    <div class="icon_box">
+                        <span class="icon-telephone"></span>
+                    </div>
+                    <h4>Quick Contact</h4>
+                    <div class="text">
+                        <p>Ph: (+90) 212 276 63 73<br>Email: info@mdarge.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.8536110491643!2d29.033550688545077!3d41.1082359480025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1288fd61f00239f2!2sAr%C4%B1%20Teknokent%20Proje!5e0!3m2!1str!2str!4v1577176295660!5m2!1str!2str" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    </div>
+
+</section>
+
+
+<section class="contact_us sec-padd-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="section-title">
+                    <h3>Send Your Message Us</h3>
+                </div>
+                <div class="default-form-area">
+                    <form id="contact-form" name="contact_form" class="default-form" action="inc/sendmail.php" method="post">
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                <div class="form-group">
+                                    <input type="text" name="form_name" id="txtname" class="form-control" value="" placeholder="Your Name *" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" name="form_email" id="txtemail" class="form-control required email" value="" placeholder="Your Mail *" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="form_subject" id="txtsubject" class="form-control" value="" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <textarea name="form_message" id="txtmessage" class="form-control textarea required" placeholder="Your Message...."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                                    <button class="thm-btn2" type="submit" data-loading-text="Please wait...">send message</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-8 col-xs-12">
+                <div class="home-google-map">
+                    <div class="google-map"
+                         id="contact-google-map"
+                         data-map-lat="40.938541"
+                         data-map-lng="-73.904893"
+                         data-icon-path="/images/logo/map-marker.png"
+                         data-map-title="Chester"
+                         data-map-zoom="11">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
