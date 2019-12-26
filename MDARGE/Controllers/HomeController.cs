@@ -86,12 +86,12 @@ namespace MDARGE.Controllers
             sc.Host = "mail.mdarge.com";
             SmtpClient tny = new SmtpClient("mail.mdarge.com", 587);
             //sc.EnableSsl = true;
-            MailMessage msg = new MailMessage("tunay.yilmaz@mdarge.com", "omur.gurbuz@mdarge.com");
-            tny.Credentials = new NetworkCredential("tunay.yilmaz@mdarge.com", "12345678");
-            sc.Credentials = new NetworkCredential("tunay.yilmaz@mdarge.com", "12345678");
+            MailMessage msg = new MailMessage("websitecontactus@mdarge.com", "websitecontactus@mdarge.com");
+            tny.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
+            sc.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("omur.gurbuz@mdarge.com", txtemail);
-            mail.To.Add("tunaysabriyilmaz@gmail.com");
+            mail.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
+            mail.To.Add("websitecontactus@mdarge.com");
             mail.Subject = subject;
             mail.IsBodyHtml = true;
             mail.Body = txtmessage;
@@ -216,14 +216,14 @@ namespace MDARGE.Controllers
         {
 
             MailMessage eposta = new MailMessage();
-            eposta.From = new MailAddress("tunay.yilmaz@mdarge.com");
+            eposta.From = new MailAddress("websitecontactus@mdarge.com");
             eposta.To.Add(tomail);
             eposta.Subject = subject;
             eposta.Body = message;
             eposta.IsBodyHtml = true;
 
-            SmtpClient smtp = new SmtpClient("smtp.mdarge.ru", 587);
-            smtp.Credentials = new NetworkCredential("tunay.yilmaz@mdarge.com", "12345678");
+            SmtpClient smtp = new SmtpClient("smtp.mdarge.com", 587);
+            smtp.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
             //smtp.Port = 587;
             smtp.EnableSsl = true;
             //smtp.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
