@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
 
-namespace MDARGE.Controllers
+namespace UniHealthWebSite.Controllers
 {
     public class query
     {

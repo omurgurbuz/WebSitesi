@@ -8,7 +8,7 @@ using static System.Net.Mime.MediaTypeNames;
 using System.Net;
 using System.Net.Mail;
 
-namespace MDARGE.Controllers
+namespace UniHealthWebSite.Controllers
 {
     public class HomeController : Controller
     {
