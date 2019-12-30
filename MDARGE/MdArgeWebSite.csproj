@@ -136,6 +136,7 @@
     <Content Include="images\Customers\tazemasa.jpg" />
     <Content Include="images\Customers\tudors.jpg" />
     <Content Include="images\Customers\yesil.jpg" />
+    <Content Include="images\icons\favicon.ico" />
     <Content Include="images\logo\LOGO.svg" />
     <Content Include="images\products\basic auto.jpg" />
     <Content Include="images\products\coklu_dil.jpg" />
@@ -320,7 +321,7 @@
     <Folder Include="images\clients\" />
     <Folder Include="images\fancybox\" />
     <Folder Include="images\fav-icon\" />
-    <Folder Include="images\icons\" />
+    <Folder Include="images\Partners\" />
     <Folder Include="images\resource\" />
     <Folder Include="images\service\" />
     <Folder Include="inc\phpmailer\" />
