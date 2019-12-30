@@ -766,7 +766,9 @@ input, textarea {
 }
 
 .theme_menu.stricky-fixed .main-logo {
-    margin: 23px 0;
+    margin: 5px 0;
+    width: 75%;
+    height: 75%;
 }
 
 .theme_menu.stricky-fixed .nav_side_content {
