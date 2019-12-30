@@ -273,7 +273,7 @@
 	}
 	.top-bar {
 		text-align: center;
-		padding: 15px 0;
+		padding: 0px 0;
 		line-height: 40px;
 	}
 
@@ -281,6 +281,7 @@
 
 @media (max-width: 420px) {
 
+	.whychoos-us .section-title:after,
 	.whychoos-us .section-title:after,
 	.whychoos-us .section-title:before {
 		top: 90px;
