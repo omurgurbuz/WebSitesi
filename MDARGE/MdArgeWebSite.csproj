@@ -307,6 +307,8 @@
     <Content Include="Views\Home\dcubeallInOne.cshtml" />
     <Content Include="Views\Home\deneme.cshtml" />
     <Content Include="Documents\Brochures\UFC Smart QA Brochure.pdf" />
+    <Content Include=".well-known\acme-challenge\oscwnhfhpe4SxuMV3wjruokapEj9fe_dKUouiDkKQto" />
+    <Content Include=".well-known\acme-challenge\W3LqAf_CM77fU0bzc4CQCRgvUZJA7KLwjGEJw3l8Vmk" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
