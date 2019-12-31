@@ -1756,6 +1756,7 @@
     animation-name: fadeOutUpBig
 }
 
+
 @-webkit-keyframes flip {
     0% {
         -webkit-transform: perspective(400px) rotateY(-1turn);
