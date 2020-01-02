@@ -736,7 +736,7 @@ input, textarea {
 }
 
 .menuzord-menu ul.dropdown, .menuzord-menu ul.dropdown li ul.dropdown {
-    padding: 30px 30px;
+    padding: 0px 30px;
     min-width: 100px;
     background: #10252e;
     float:left;
