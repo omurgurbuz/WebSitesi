@@ -50,12 +50,10 @@ namespace MDARGE.Controllers
             MailMessage msg = new MailMessage("websitecontactus@mdarge.com", "websitecontactus@mdarge.com");
             tny.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
             sc.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
-            MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
-            mail.To.Add("websitecontactus@mdarge.com");
-            mail.Subject = txtsubject;
-            mail.IsBodyHtml = true;
-            msg.Body ="Konu="+ txtsubject + "\n" + "Ad-Soyad=" + txtname + "\n" +"Email=" + txtemail + "\n" + "Telefon=" + txtphone + "\n" + "Mesaj=" + txtmessage;
+            
+            msg.Body ="Konu: "+ txtsubject + "\n\r" + "Ad-Soyad: " + txtname + "\n\r" + "E-Posta: " + txtemail + "\n\r" + "Telefon: " + txtphone + "\n\r" + "Mesaj: " + txtmessage;
+            msg.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
+            msg.Subject = "Contact Us: " + txtsubject;
 
             tny.Send(msg);
             return View();
@@ -76,12 +74,10 @@ namespace MDARGE.Controllers
             MailMessage msg = new MailMessage("websitecontactus@mdarge.com", "websitecontactus@mdarge.com");
             tny.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
             sc.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
-            MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
-            mail.To.Add("websitecontactus@mdarge.com");
-            mail.Subject = txtsubject;
-            mail.IsBodyHtml = true;
-            msg.Body = txtsubject +"," + "////////" + "," + txtmessage + "," + "////////" + "," + txtemail;
+
+            msg.Body = "Konu: " + txtsubject + "\n\r" + "Ad-Soyad: " + txtname + "\n\r" + "E-Posta: " + txtemail + "\n\r" + "Mesaj: " + txtmessage;
+            msg.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
+            msg.Subject = "FAQ: " + txtsubject;
 
             tny.Send(msg);
             return View();
