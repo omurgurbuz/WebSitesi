@@ -46,16 +46,15 @@ namespace MDARGE.Controllers
             sc.Port = 587;
             sc.Host = "mail.mdarge.com";
             SmtpClient tny = new SmtpClient("mail.mdarge.com", 587);
-            //sc.EnableSsl = true;
-            MailMessage msg = new MailMessage("websitecontactus@mdarge.com", "websitecontactus@mdarge.com");
-            tny.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
-            sc.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
+            MailMessage msg = new MailMessage("info@mdarge.com", "info@mdarge.com");
+            tny.Credentials = new NetworkCredential("info@mdarge.com", "OmUr4379");
+            sc.Credentials = new NetworkCredential("info@mdarge.com", "OmUr4379");
             
             msg.Body ="Konu: "+ txtsubject + "\n\r" + "Ad-Soyad: " + txtname + "\n\r" + "E-Posta: " + txtemail + "\n\r" + "Telefon: " + txtphone + "\n\r" + "Mesaj: " + txtmessage;
-            msg.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
+            msg.From = new MailAddress("info@mdarge.com", txtemail);
             msg.Subject = "Contact Us: " + txtsubject;
-
             tny.Send(msg);
+            ViewBag.Message = String.Format("Mesajınız başarıyla gönderilmiştir.", DateTime.Now.ToString());
             return View();
         }
         public ActionResult Faq()
@@ -71,14 +70,13 @@ namespace MDARGE.Controllers
             sc.Host = "mail.mdarge.com";
             SmtpClient tny = new SmtpClient("mail.mdarge.com", 587);
             //sc.EnableSsl = true;
-            MailMessage msg = new MailMessage("websitecontactus@mdarge.com", "websitecontactus@mdarge.com");
-            tny.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
-            sc.Credentials = new NetworkCredential("websitecontactus@mdarge.com", "OmUr4379");
+            MailMessage msg = new MailMessage("mail.mdarge.com", "mail.mdarge.com");
+            tny.Credentials = new NetworkCredential("mail.mdarge.com", "OmUr4379");
+            sc.Credentials = new NetworkCredential("mail.mdarge.com", "OmUr4379");
 
             msg.Body = "Konu: " + txtsubject + "\n\r" + "Ad-Soyad: " + txtname + "\n\r" + "E-Posta: " + txtemail + "\n\r" + "Mesaj: " + txtmessage;
-            msg.From = new MailAddress("websitecontactus@mdarge.com", txtemail);
+            msg.From = new MailAddress("mail.mdarge.com", txtemail);
             msg.Subject = "FAQ: " + txtsubject;
-
             tny.Send(msg);
             return View();
         }
