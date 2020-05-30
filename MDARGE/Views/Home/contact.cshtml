@@ -129,7 +129,7 @@
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
                                     <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                                    <button class="thm-btn" type="submit" data-loading-text="Please wait...">send message</button>
+                                    <button class="thm-btn" onclick="myFunction()" type="submit" data-loading-text="Please wait...">send message</button>
                                 </div>
                             </div>
                         </div>
@@ -140,12 +140,14 @@
     </div>
     @if (ViewBag.Message != null)
     {
-        <script type="text/javascript">
-          window.onload = function ()
-          {
-           alert("@ViewBag.Message");
-          };
+        <script>
+            function myFunction()
+            {
+            alert("@ViewBag.Message");
+            }
         </script>
-
     }
+
 </section>
+
+

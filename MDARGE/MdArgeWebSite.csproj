@@ -164,6 +164,8 @@
     <Content Include="images\products\premium6.png" />
     <Content Include="images\products\premium7.png" />
     <Content Include="images\products\radyology allinone.jpg" />
+    <Content Include="images\Technology\Technology1.1.jpg" />
+    <Content Include="images\Technology\Technology1.2.jpg" />
     <Content Include="images\products\UFC %28370 x 227%29.jpg" />
     <Content Include="images\products\ufcGuncel.jpg" />
     <Content Include="images\project\43b94310-4431-4e9b-9907-ece8d2da7cdb.jpg" />
@@ -214,6 +216,8 @@
     <Content Include="images\team\Mert.png" />
     <Content Include="images\team\Omur.png" />
     <Content Include="images\team\tunay.png" />
+    <Content Include="images\Technology\Technology2.1.jpg" />
+    <Content Include="images\Technology\Technology2.2.jpg" />
     <Content Include="js\bootstrap-select.min.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\bxslider.js" />
@@ -305,6 +309,8 @@
     <Content Include="Documents\Brochures\UFC Smart QA Brochure.pdf" />
     <Content Include="Documents\Brochures\D-Cube Smart QA System %281%29.pdf" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\Home\smartQaUnique1.cshtml" />
+    <Content Include="Views\Home\smartQaUnique2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

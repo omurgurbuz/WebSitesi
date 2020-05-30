@@ -144,6 +144,15 @@ namespace MDARGE.Controllers
         {
             return View();
         }
+        public ActionResult smartQaUnique1()
+        {
+            return View();
+        }
+        public ActionResult smartQaUnique2()
+        {
+            return View();
+        }
+        
 
     }
 
