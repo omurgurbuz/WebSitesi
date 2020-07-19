@@ -118,6 +118,7 @@
   <ItemGroup>
     <Content Include="bootstrap-select.min.js" />
     <Content Include="css\bootstrap.minn.css" />
+    <Content Include="css\downloadPopup.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\template.css" />
     <Content Include="images\background\graybackround.jpg" />
@@ -311,6 +312,8 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Home\smartQaUnique1.cshtml" />
     <Content Include="Views\Home\smartQaUnique2.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\download.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

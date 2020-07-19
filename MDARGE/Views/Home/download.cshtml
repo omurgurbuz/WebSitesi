@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "download";
+}
+<link href="~/css/downloadPopup.css" rel="stylesheet" />
+<title>Download - MD ARGE</title>
+<section class="contact_details sec-padd2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12" style="margin:auto;">
+                <div class="item center">
+                    <div class="icon_box">
+                        <span class="revicon-down-open"></span>
+                    </div>
+                    <h4>D-Cube Setup</h4>
+                    <div class="text">
+                        <p>
+                            Please click to download D-Cube to your computer
+                        </p>
+                        <button class="thm-btn2" id="myBtn">Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item center">
+                    <div class="icon_box">
+                        <span class="revicon-list-add"></span>
+                    </div>
+                    <h4>Brochure</h4>
+                    <div class="text">
+                        <p>Monday to Friday: 09.00am to 18.00pm <br>Saturday&amp;Sunday: Closed</p>
+                    </div>
+                    <a href="/Home/freeContact" type="button" class="thm-btn2">Download</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item center">
+                    <div class="icon_box">
+                        <span class="revicon-cog"></span>
+                    </div>
+                    <h4>
+                        User Guide
+                    </h4>
+                    <div class="text">
+                        <p>Ph: (+90) 212 801 4255<br>Email: Info@medicawell.com</p>
+                        <a href="/Home/freeContact" type="button" class="thm-btn2">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <br />
+            <p>Please enter your code to download</p>
+            <div style="text-align:center;">
+                <input style="background-color: gray; width: 100%;height:100px; padding: 30px; border: 22px solid dotted; padding:25px; font-size:50px; color:white;">
+                <br />
+                <button class="btn1">Download</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    // Popup Al
+    var modal = document.getElementById('myModal');
+
+    // Kipi açan düğmeyi al
+    var btn = document.getElementById("myBtn");
+
+    // Kipi kapatan <span> öğesini edinin
+    var span = document.getElementsByClassName("close")[0];
+
+    // Kullanıcı düğmeyi tıklattığında
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // Kullanıcı <span> (x) düğmesini tıkladığında, popup
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Kullanıcı modelden başka herhangi bir yeri tıklattıysa, onu kapatın.
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }</script>

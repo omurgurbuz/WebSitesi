@@ -152,8 +152,11 @@ namespace MDARGE.Controllers
         {
             return View();
         }
-        
 
+        public ActionResult download()
+        {
+            return View();
+        }
     }
 
 }
