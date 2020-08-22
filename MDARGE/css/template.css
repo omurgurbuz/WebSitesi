@@ -12,6 +12,7 @@ body {
 body.helix-ultimate-preloader {
   overflow: hidden;
 }
+
 body.helix-ultimate-preloader:before {
   content: " ";
   position: fixed;
