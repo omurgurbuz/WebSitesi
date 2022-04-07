@@ -319,7 +319,7 @@
     <Content Include="Views\Home\dcubeallInOne.cshtml" />
     <Content Include="Views\Home\deneme.cshtml" />
     <Content Include="Documents\Brochures\UFC Smart QA Brochure.pdf" />
-    <Content Include="Documents\Brochures\D-Cube Smart QA System %281%29.pdf" />
+    <Content Include="Documents\Brochures\D-Cube Smart QA System.pdf" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Home\smartQaUnique1.cshtml" />
     <Content Include="Views\Home\smartQaUnique2.cshtml" />

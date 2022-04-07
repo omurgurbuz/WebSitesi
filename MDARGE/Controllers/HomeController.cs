@@ -17,7 +17,7 @@ namespace MDARGE.Controllers
 
     public class HomeController : Controller
     {
-        SQLiteConnection baglan = new SQLiteConnection();
+        //SQLiteConnection baglan = new SQLiteConnection();
 
 
         // GET: Home
